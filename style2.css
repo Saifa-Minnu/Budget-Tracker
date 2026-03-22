@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+/* Center layout */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Outer card */
+.outer-card {
+  width: 90%;
+  max-width:600px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Inner card */
+.inner-card {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* Balance */
+.balance-box {
+  margin-bottom: 20px;
+}
+
+.balance-box h1 {
+  font-size:35px;
+  margin-top: 20px;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.summary div {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Income & Expense colors */
+.income {
+  background: linear-gradient(135deg, #00c9a7, #00b894);
+}
+
+.expense {
+  background: linear-gradient(135deg, #ff6b6b, #ee5253);
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top:20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Logout */
+.logout {
+  margin-top: 15px;
+  background: #ff4757;
+}
+
+/* List */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #f1f1f1;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .summary {
+    flex-direction: column;
+  }
+}
